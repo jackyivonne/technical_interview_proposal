@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "fb4ac53f-ab6f-4cff-ab14-1c7d8896f820",
+		"name": "SICPA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetEnterprise",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8087/enterprise/listEnterprise",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"enterprise",
+						"listEnterprise"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatedEnterprise",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"createdBy\": \"Jacqueline Arias\",\r\n\t\"createdDate\": \"2022-07-04\",\r\n\t\"modifiedBy\": \"Paola\",\r\n\t\"modifiedDate\": \"2022-07-04\",\r\n\t\"status\": true,\r\n\t\"address\":\" Quitumbe\",\r\n\t\"name\":\" Contraloria\",\r\n\t\"phone\":\" 09945997\"\t\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8087/enterprise/createdEnterprise",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"enterprise",
+						"createdEnterprise"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateEnterprise",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{        \r\n        \"createdBy\": \"Nathalia Arias\",\r\n        \"createdDate\": \"2022-07-05\",\r\n        \"modifiedBy\": \"Pamela\",\r\n        \"modifiedDate\": \"2022-07-06\",\r\n        \"status\": false,\r\n        \"address\": \" Quitumbe\",\r\n        \"name\": \" BPT S.A\",\r\n        \"phone\": \" 02680913\"\r\n       \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8087/enterprise/updateEnterprise/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"enterprise",
+						"updateEnterprise",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDepartaments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8087/departament/listDepartaments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"departament",
+						"listDepartaments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatedDetartaments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"createdBy\": \"Jacqueline Arias\",\r\n\t\"createdDate\": \"2022-07-04\",\r\n\t\"modifiedBy\": \"Paola\",\r\n\t\"modifiedDate\": \"2022-07-04\",\r\n\t\"status\": true,\r\n\t\"description\":\" Quitumbe\",\r\n\t\"name\":\" Contraloria\",\r\n\t\"phone\":\" 09945997\",\r\n\t\"enterprise\": {\r\n\t\t\"id\": 1\r\n\t}\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8087/departament/createdDepartament",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"departament",
+						"createdDepartament"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateDepartament",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetEmployees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8087/employee/listEmployee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"employee",
+						"listEmployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatedEmployeed",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateEmployee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"createdBy\": \"Jacqui\",\r\n\t\"createdDate\": \"2022-07-04\",\r\n\t\"modifiedBy\": \"Paola\",\r\n\t\"modifiedDate\": \"2022-07-04\",\r\n\t\"status\": true,\r\n\t\"age\":\" 25\",\r\n\t\"email\":\" jiarias@gmail.com\",\r\n\t\"name\":\"Ivonne\",\r\n\t\"position\":\"Jefe de Sistemas\",\r\n\t\"surname\":\" Lobato Arias\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8087/employee/updateEmployee/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"employee",
+						"updateEmployee",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
